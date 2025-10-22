@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>역할 배분 프로그램 다운로드</title>
+    <!-- Tailwind CSS 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 적용 (선택 사항) */
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-10 rounded-xl shadow-lg w-full max-w-md mx-4">
+        
+        <header class="text-center mb-8">
+            <!--  -->
+            <h1 class="text-3xl font-bold text-gray-800">역할 배분 프로그램</h1>
+            <p class="text-gray-600 mt-2">필요한 운영체제(OS) 버전을 다운로드하세요.</p>
+        </header>
+
+        <main class="space-y-4">
+            <!-- 
+                [!!!] 중요:
+                아래 href="#" 부분에 실제 파일 다운로드 링크를 넣어야 합니다.
+                .app 파일은 .zip 파일로 압축해서 업로드하는 것을 강력히 권장합니다.
+            -->
+
+            <!-- 1. 윈도우용 다운로드 버튼 -->
+            <a href="YOUR_WINDOWS_EXE_FILE_LINK_HERE.exe" 
+               download
+               class="flex items-center justify-center w-full bg-blue-600 text-white p-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-blue-700">
+                <!-- Windows 로고 SVG -->
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.514L9.58 2.327v9.428H0V3.514zM10.455 2.3l13.545-1.3v10.758h-13.545V2.3zM0 12.623h9.58v9.428L0 20.856v-8.233zm10.455 0h13.545V23l-13.545-1.29V12.623z"></path></svg>
+                <span>Windows (.exe) 다운로드</span>
+            </a>
+
+            <!-- 2. 맥용 다운로드 버튼 -->
+            <a href="YOUR_MAC_APP_ZIP_FILE_LINK_HERE.zip" 
+               download
+               class="flex items-center justify-center w-full bg-gray-800 text-white p-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-gray-900">
+                <!-- Apple 로고 SVG -->
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.158 17.653c.174.004.348-.004.522-.016a5.07 5.07 0 012.285-.929c.865-.333 1.636-.88 2.23-1.604.646-.79 1.074-1.795 1.152-2.956-.012-.008-.024-.012-.03-.02a.126.126 0 01-.02-.03c-.028-.028-.048-.06-.08-.088-.04-.036-.08-.068-.124-.1-.12-.092-.248-.172-.376-.252-.256-.164-.528-.3-.812-.412-.516-.2-.988-.292-1.42-.3-.236 0-.46.016-.684.048-.224.032-.44.08-.644.14-.204.06-.4.128-.588.204-.188.076-.376.148-.552.228-.176.08-.34.168-.508.252a4.34 4.34 0 00-.4.22c-.12.08-.232.164-.34.252-.108.088-.208.18-.308.276a.32.32 0 00-.064.068c-.012.016-.02.028-.032.044a.2.2 0 00-.016.036c.092 1.28.56 2.36 1.28 3.16.68.76 1.524 1.284 2.44 1.536.268.072.54.128.816.168.276.04.552.06.828.06zM9.998 2.8c.012-.016.028-.028.04-.044a.311.311 0 01.06-.064c.02-.016.04-.036.06-.052.124-.088.252-.172.38-.252.256-.16.52-.304.796-.424.54-.22 1.04-.324 1.5-.324.46 0 .924.104 1.4.324.276.12.54.264.796.424.128.08.256.164.38.252.02.016.04.036.06.052.02.016.044.032.06.048.016.012.028.028.044.04a.2.2 0 01.036.036c-.104 1.232-.56 2.268-1.24 3.02-.68.752-1.52 1.268-2.42 1.52-.264.072-.536.128-.812.168-.276.04-.544.06-.816.06s-.54-.02-.816-.06a5.07 5.07 0 01-.812-.168c-.9-.252-1.74-.768-2.42-1.52-.68-.752-1.136-1.788-1.24-3.02a.126.126 0 01.02-.03c.008-.008.02-.016.024-.028a.32.32 0 00.068-.068c.1-.1.2-.188.308-.276.108-.088.216-.172.34-.252.168-.088.332-.172.508-.252.176-.08.364-.152.552-.228.188-.076.38-.144.588-.204.204-.06.42-.108.644-.14.224-.032.448-.048.684-.048.276 0 .548.016.82.048z"></path></svg>
+                <span>macOS (.zip) 다운로드</span>
+            </a>
+        </main>
+
+        <footer class="text-center mt-8">
+            <p class="text-sm text-gray-500">
+                macOS의 경우, .zip 파일의 압축을 푼 뒤 .app 파일을 '응용 프로그램' 폴더로 드래그하세요.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
